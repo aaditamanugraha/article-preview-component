@@ -12,32 +12,54 @@
     />
     <title>Frontend Mentor | Article preview component</title>
   </head>
-  <body class="underline">
-    <main>
-      <img src="./images/drawers.jpg" alt="drawers" />
+  <body
+    class="mx-auto min-w-80 bg-gradient-to-br from-light-grayish-blue from-10% via-light-grayish-blue via-50% to-grayish-blue to-90%"
+  >
+    <main class="w-10/12 mx-auto bg-white rounded-xl overflow-hidden my-16">
+      <div class="mb-8">
+        <img src="./images/drawers.jpg" alt="drawers" />
+      </div>
 
-      <div>
-        <article>
-          <h1>
+      <div class="px-7">
+        <article class="mb-8">
+          <h1
+            class="mb-3 font-article text-lg/6 font-bold text-very-dark-grayish-blue"
+          >
             Shift the overall look and feel by adding these wonderful touches to
             furniture in your home
           </h1>
-          <p>
+          <p class="text-sm/5 text-desaturated-dark-blue">
             Ever been in a room and felt like something was missing? Perhaps it
             felt slightly bare and uninviting. I’ve got some simple tips to help
             you make any room feel complete.
           </p>
         </article>
 
-        <div>
-          <div>
-            <img src="./images/avatar-michelle.jpg" alt="avatar-michelle" />
+        <div class="flex mb-5 items-center justify-between">
+          <div class="flex">
+            <div class="rounded-full h-10 w-10 overflow-hidden mr-4">
+              <img
+                src="./images/avatar-michelle.jpg"
+                alt="avatar-michelle"
+                class="object-contain"
+              />
+            </div>
+            <div>
+              <h2
+                class="font-article text-sm font-bold text-very-dark-grayish-blue"
+              >
+                Michelle Appleton
+              </h2>
+              <p
+                class="font-article text-sm font-light text-desaturated-dark-blue"
+              >
+                28 Jun 2020
+              </p>
+            </div>
           </div>
           <div>
-            <h2>Michelle Appleton</h2>
-            <p>28 Jun 2020 Share</p>
+            <button>Share</button>
           </div>
-          <button>Share</button>
         </div>
       </div>
     </main>
