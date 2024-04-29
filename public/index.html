@@ -24,7 +24,7 @@
         </div>
 
         <div class="px-7 md:py-7 md:w-3/5">
-          <article class="mb-8">
+          <article id="article">
             <h1
               class="mb-3 font-article text-lg/6 font-bold text-very-dark-grayish-blue"
             >
@@ -37,50 +37,59 @@
               help you make any room feel complete.
             </p>
           </article>
+        </div>
 
-          <div class="flex items-center justify-between mb-7 md:mb-0">
-            <div class="flex items-center">
-              <div class="rounded-full h-10 w-10 overflow-hidden mr-4">
-                <img
-                  src="./images/avatar-michelle.jpg"
-                  alt="avatar-michelle"
-                  class="object-contain"
-                />
-              </div>
-              <div>
-                <h2
-                  class="font-article text-sm font-bold text-very-dark-grayish-blue"
-                >
-                  Michelle Appleton
-                </h2>
-                <p
-                  class="font-article text-sm font-light text-desaturated-dark-blue"
-                >
-                  28 Jun 2020
-                </p>
-              </div>
-            </div>
-
-            <button
-              type="button"
-              data-twe-ripple-init
-              data-twe-ripple-color="light"
-              class="inline-block rounded-full bg-light-grayish-blue p-3 text-xs font-medium uppercase leading-normal text-white"
+        <div
+          class="flex items-center justify-between p-7 md:mb-0"
+          id="share_btn_container"
+        >
+          <div class="flex items-center" id="profile_container">
+            <div
+              class="rounded-full h-10 w-10 overflow-hidden mr-4"
+              id="profile_pict"
             >
-              <span class="[&>svg]:h-4 [&>svg]:w-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
-                  <path
-                    fill="#6E8098"
-                    d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
-                  />
-                </svg>
-              </span>
-            </button>
+              <img
+                src="./images/avatar-michelle.jpg"
+                alt="avatar-michelle"
+                class="object-contain"
+              />
+            </div>
+            <div id="profile_name">
+              <h2
+                class="font-article text-sm font-bold text-very-dark-grayish-blue"
+              >
+                Michelle Appleton
+              </h2>
+              <p
+                class="font-article text-sm font-light text-desaturated-dark-blue"
+              >
+                28 Jun 2020
+              </p>
+            </div>
           </div>
+
+          <button
+            type="button"
+            data-twe-ripple-init
+            data-twe-ripple-color="light"
+            id="share_btn"
+            class="inline-block rounded-full bg-light-grayish-blue p-3 text-xs font-medium uppercase leading-normal hover:bg-very-dark-grayish-blue text-light-grayish-blue"
+          >
+            <span class="[&>svg]:h-4 [&>svg]:w-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+                <path
+                  fill="#6E8098"
+                  d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+                />
+              </svg>
+            </span>
+          </button>
         </div>
       </main>
 
-      <footer class="attribution flex justify-center items-center mt-16 mx-auto">
+      <footer
+        class="attribution flex justify-center items-center mt-16 mx-auto"
+      >
         <p class="text-xs">
           Challenge by
           <a
@@ -95,5 +104,7 @@
         </p>
       </footer>
     </div>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>
